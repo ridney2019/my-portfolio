@@ -1,4 +1,5 @@
-// pages/projects.js
+// app/projects/page.tsx
+
 import Link from 'next/link';
 
 export default function Projects() {
@@ -6,7 +7,7 @@ export default function Projects() {
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <header className="bg-white shadow-lg p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold text-blue-600">Your Name</h1>
+          <h1 className="text-xl font-bold text-blue-600">Ridney Silva</h1>
           <nav>
             <ul className="flex space-x-6">
               <li><Link href="/">Home</Link></li>
@@ -23,15 +24,15 @@ export default function Projects() {
           <div className="bg-white shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold">Project 1</h3>
             <p className="mt-2 text-gray-600">Brief description of the project.</p>
-            <Link href="https://github.com">
-              <a className="mt-4 inline-block text-blue-600">View on GitHub</a>
+            <Link href="https://github.com"
+              className="mt-4 inline-block text-blue-600">View on GitHub
             </Link>
           </div>
           <div className="bg-white shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold">Project 2</h3>
             <p className="mt-2 text-gray-600">Brief description of the project.</p>
-            <Link href="https://github.com">
-              <a className="mt-4 inline-block text-blue-600">View on GitHub</a>
+            <Link href="https://github.com"
+               className="mt-4 inline-block text-blue-600">View on GitHub
             </Link>
           </div>
         </div>

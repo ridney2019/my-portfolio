@@ -1,4 +1,4 @@
-// pages/services.js
+// app/services/page.tsx
 import Link from 'next/link';
 
 export default function Services() {
@@ -6,7 +6,7 @@ export default function Services() {
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <header className="bg-white shadow-lg p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold text-blue-600">Your Name</h1>
+          <h1 className="text-xl font-bold text-blue-600">Ridney Silva</h1>
           <nav>
             <ul className="flex space-x-6">
               <li><Link href="/">Home</Link></li>

@@ -1,4 +1,6 @@
-// pages/contact.js
+// app/contact/page.tsx
+"use client"; 
+
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -9,15 +11,13 @@ export default function Contact() {
     message: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // You can handle form submission here, like sending data to an API
     console.log('Form Data Submitted: ', formData);
-    // Clear form fields after submission
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -25,7 +25,7 @@ export default function Contact() {
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <header className="bg-white shadow-lg p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold text-blue-600">Your Name</h1>
+          <h1 className="text-xl font-bold text-blue-600">Ridney Silva</h1>
           <nav>
             <ul className="flex space-x-6">
               <li><Link href="/">Home</Link></li>
@@ -74,7 +74,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 id="message"
-                rows="4"
+                rows={4}
                 value={formData.message}
                 onChange={handleChange}
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"

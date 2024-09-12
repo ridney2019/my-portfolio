@@ -1,4 +1,3 @@
-// app/about/page.tsx
 import Link from 'next/link';
 
 export default function About() {
@@ -22,12 +21,14 @@ export default function About() {
         <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
           I am a passionate software engineer with expertise in building efficient, scalable, and user-centric software applications.
           With a strong background in:
-            <ul className="flex space-x-2"> 
-              <li><strong >Analysing ideas &	data Anticipating	problems</strong></li>
-                <li><strong>&	planning	solutions</strong></li>	
-                <li><strong>Develop &	streamline systems</strong></li>
-            </ul>
-             I specialize in delivering high-quality solutions for clients.
+        </p>
+        <ul className="mt-4 space-y-3 text-lg text-gray-700 max-w-3xl mx-auto list-disc list-inside text-left">
+          <li><strong>Analyzing ideas & data, anticipating problems</strong></li>
+          <li><strong>Planning & implementing solutions</strong></li>
+          <li><strong>Developing & streamlining systems</strong></li>
+        </ul>
+        <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+          I specialize in delivering high-quality solutions for clients.
         </p>
       </main>
     </div>

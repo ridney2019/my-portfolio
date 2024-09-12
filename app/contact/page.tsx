@@ -15,11 +15,32 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('Form Data Submitted: ', formData);
-    setFormData({ name: '', email: '', message: '' });
-  };
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      console.log('Form submitted successfully:', formData);
+      // Optionally show a success message to the user
+    } else {
+      console.error('Form submission failed:', response.statusText);
+    }
+  } catch (error) {
+    console.error('Form submission error:', error);
+  }
+
+  // Reset form fields
+  setFormData({ name: '', email: '', message: '' });
+};
+
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">

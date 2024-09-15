@@ -91,9 +91,9 @@ export default function Home() {
       {/* Contact Section */}
       <section className="py-20">
         <div className="container mx-auto text-center">
-          <h2 className="text-5xl font-semibold text-black mb-8">Let’s Collaborate</h2>
+          <h2 className="text-5xl font-semibold text-black mb-8"><p>Let&#39;s Collaborate</p></h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Ready to bring your vision to life? Get in touch, and let's create something remarkable together.
+            Ready to bring your vision to life? Get in touch, and let&#39;s create something remarkable together.
           </p>
           <Button href="/contact" className="bg-black text-white hover:bg-gray-800">
             Contact Me
